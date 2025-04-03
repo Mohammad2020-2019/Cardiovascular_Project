@@ -1,0 +1,103 @@
+/* Update result styling for heart disease */
+.result.heart-disease {
+  background-color: #ffe6e6;
+  border: 2px solid #ff4444;
+  color: #cc0000;
+}
+
+.result.no-heart-disease {
+  background-color: #e6ffe6;
+  border: 2px solid #00cc00;
+  color: #006600;
+}
+
+/* Update form container styling */
+.form-container {
+  max-width: 800px; /* Increased width for better form layout */
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Enhance form element styling */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: #2d3748;
+}
+
+input, select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  background: #3182ce;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: #2b6cb0;
+}
+
+/* Update error message styling */
+.error-message {
+  color: #e53e3e;
+  background: #fff5f5;
+  padding: 1rem;
+  border: 1px solid #fc8181;
+  border-radius: 4px;
+  margin-top: 1.5rem;
+}
+
+/* Remove stroke-specific styles */
+/* DELETE THESE OLD STYLES:
+.result.stroke {
+  background-color: #ffe6e6;
+  border: 2px solid #ff4444;
+  color: #cc0000;
+}
+
+.result.no-stroke {
+  background-color: #e6ffe6;
+  border: 2px solid #00cc00;
+  color: #006600;
+}
+*/
+
+/* Add medical form specific enhancements */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .form-container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .interface-container {
+    grid-template-columns: 1fr;
+  }
+}
